@@ -29,8 +29,7 @@ contract Token {
 		string memory _name, 
 		string memory _symbol, 
 		uint256 _totalSupply
-		) 
-	{
+	) {
 		name = _name;
 		symbol = _symbol;
 		totalSupply = _totalSupply * (10**decimals);
@@ -65,8 +64,6 @@ contract Token {
 		emit Transfer(_from, _to, _value);
 	}
 
-
-
 	function approve(address _spender, uint256 _value)
 		public
 		returns(bool success)
@@ -100,6 +97,4 @@ contract Token {
 
 			return true;
 		}
-
-
 }
